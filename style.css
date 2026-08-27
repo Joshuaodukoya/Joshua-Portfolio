@@ -69,35 +69,66 @@ section p {
 /* Home */
 
 #home {
-    min-height: 80vh;
+    min-height: 85vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    padding: 80px 50px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-intro {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
 }
 
 #home h1 {
-    font-size: 52px;
+    font-size: 60px;
     margin-bottom: 10px;
 }
 
 #home h2 {
-    font-size: 25px;
+    font-size: 26px;
     margin-bottom: 20px;
 }
 
-#home a {
+.hero-description {
+    font-size: 18px;
+    max-width: 700px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.hero-buttons a {
     display: inline-block;
-    width: fit-content;
-    margin-top: 20px;
-    padding: 12px 24px;
+    padding: 13px 25px;
     background: #111827;
     color: white;
     text-decoration: none;
     border-radius: 5px;
 }
 
-#home a:hover {
+.hero-buttons a:hover {
     background: #374151;
+}
+
+.hero-buttons .secondary-button {
+    background: transparent;
+    color: #111827;
+    border: 2px solid #111827;
+}
+
+.hero-buttons .secondary-button:hover {
+    background: #111827;
+    color: white;
 }
 
 /* Skills */
